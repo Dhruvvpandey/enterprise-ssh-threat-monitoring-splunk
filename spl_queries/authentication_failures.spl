@@ -1,3 +1,2 @@
-index=ssh_logs "Failed password"
-| stats count as failed_attempts by user
-| sort -failed_attempts
+index=ssh_logs status=failure
+| timechart span=1h count

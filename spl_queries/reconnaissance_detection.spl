@@ -1,0 +1,3 @@
+index=ssh_logs
+("scan" OR "Nmap" OR "enumeration")
+| stats count by source_ip

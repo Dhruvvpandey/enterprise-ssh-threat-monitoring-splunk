@@ -1,0 +1,2 @@
+index=ssh_logs
+| stats count by status

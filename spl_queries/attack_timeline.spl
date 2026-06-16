@@ -1,0 +1,2 @@
+index=ssh_logs
+| timechart span=1h count
